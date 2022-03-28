@@ -1,6 +1,6 @@
 [package]
 name = "gamescope-protocol"
-version = "0.1.0"
+version = "0.0.1"
 repository = "https://github.com/ianmarmour/gamescope-protocol"
 authors = ["Ian Armour <ianmarmour@gmail.com>"]
 license = "MIT"
