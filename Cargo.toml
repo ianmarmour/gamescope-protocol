@@ -10,6 +10,7 @@ build = "build.rs"
 categories = ["api-bindings"]
 edition = "2021"
 readme = "README.md"
+exclude = ["'/gamescope/*","!/gamescope/protocol"]
 
 [dependencies]
 wayland-commons = "0.29.4"
@@ -19,9 +20,9 @@ wayland-server = { version = "0.29.4", optional = true }
 [build-dependencies]
 wayland-scanner = "0.29.4"
 
-[package.metadata.docs.rs]
-all-features = true
-
 [features]
 client = ["wayland-client"]
 server = ["wayland-server"]
+
+[package.metadata.docs.rs]
+all-features = true
