@@ -1,8 +1,20 @@
 [package]
 name = "gamescope-protocol"
 version = "0.1.0"
+repository = "https://github.com/ianmarmour/gamescope-protocol"
+authors = ["Ian Armour <ianmarmour@gmail.com>"]
+license = "MIT"
+keywords = ["wayland", "gamescope", "client", "server", "protocol", "extension"]
+description = "Generated APIs for the offical gamescope wayland protocol extensions"
+build = "build.rs"
+categories = ["api-bindings"]
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+readme = "README.md"
 
 [dependencies]
+
+[build-dependencies]
+wayland-scanner = "0.29.4"
+
+[package.metadata.docs.rs]
+all-features = true
